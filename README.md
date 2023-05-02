@@ -1,6 +1,6 @@
 # Relational Database
 
-- [My MySQL playlist](https://www.youtube.com/playlist?list=PLgH5QX0i9K3qLcx9DvVDWmNJ7riPvxzCD)
+- [My MySQL playlist](https://www.youtube.com/watch?v=aZnwpMON0NA&t=4s)
 
 ## 1. introduction to Database
 
@@ -287,7 +287,7 @@ WHERE ID=102;
 ```
 
 
-##Function:
+## Function:
 ```sql
 UPPER()
 CONCAT()
@@ -300,7 +300,7 @@ TRUNCATE(10.2334543223 , 2)     //10.23
 
 
 
-##Aggregated Function:
+## Aggregated Function:
 ```sql
 COUNT()
 MAX()
@@ -310,28 +310,27 @@ AVG()
 ```
 
 
-##Alter Table:
-
-####adding field:
+## Alter Table:
+#### adding field:
 -------------
 ```sql
 ALTER TABLE info
 ADD Height int
 ```
-####changing field:
+#### changing field:
 ---------------
 ```sql
 ALTER TABLE info
 CHANGE Height Department varchar(20)
 ```
-####deleting field:
+#### deleting field:
 ---------------
 ```sql
 ALTER TABLE info
 DROP COLUMN Department
 ```
 
-##Group By:
+## Group By:
 ```sql
 SELECT Name,Department,SUM(Age) 
 from info
@@ -344,7 +343,7 @@ Truncate Table
 TRUNCATE TABLE info;          ///all record will be deleted without the fields(column name)
 ```
 
-##An Example of creating Table:
+## An Example of creating Table:
 ```sql
 create table result(
     Reg int NOT NULL AUTO_INCREMENT,
@@ -356,52 +355,52 @@ create table result(
 ```
 
 
-##joining without JOIN clause:
+## joining without JOIN clause:
 ```sql
 SELECT info.id,Name,Roll,Reg,Gpa
 From info,result
 WHERE info.id = result.id;
 ```
 
-##joining with JOIN clause:
+## joining with JOIN clause:
 ```sql
 SELECT info.id,Name,Roll,Reg,Gpa
 From info JOIN result
 ON info.id = result.id;
 ```
 
-##joining with INNER JOIN clause:
+## joining with INNER JOIN clause:
 ```sql
 SELECT info.id,Name,Roll,Reg,Gpa
 From info INNER JOIN result
 ON info.id = result.id;
 ```
 
-##joining with LEFT JOIN clause:
+## joining with LEFT JOIN clause:
 ```sql
 SELECT info.id,Name,Roll,Reg,Gpa
 From info LEFT JOIN result
 ON info.id = result.id;
 ```
 
-##joining with RIGHT JOIN clause:
+## joining with RIGHT JOIN clause:
 ```sql
 SELECT info.id,Name,Roll,Reg,Gpa
 From info RIGHT JOIN result
 ON info.id = result.id;
 ```
 
-##UNION/UNION ALL:
-https://www.youtube.com/watch?v=xoh40fhWyFg&list=PLgH5QX0i9K3qLcx9DvVDWmNJ7riPvxzCD&index=43
+## UNION/UNION ALL:
+- https://www.youtube.com/watch?v=xoh40fhWyFg&list=PLgH5QX0i9K3qLcx9DvVDWmNJ7riPvxzCD&index=43
 
 
-##VIEW:
-1.https://www.youtube.com/watch?v=zgEs_jzZJHM&list=PLgH5QX0i9K3qLcx9DvVDWmNJ7riPvxzCD&index=44
-2.https://www.youtube.com/watch?v=_-fS4OLPXO8&list=PLgH5QX0i9K3qLcx9DvVDWmNJ7riPvxzCD&index=45
+## VIEW:
+- 1.https://www.youtube.com/watch?v=zgEs_jzZJHM&list=PLgH5QX0i9K3qLcx9DvVDWmNJ7riPvxzCD&index=44
+- 2.https://www.youtube.com/watch?v=_-fS4OLPXO8&list=PLgH5QX0i9K3qLcx9DvVDWmNJ7riPvxzCD&index=45
 
 
 
 
-DATE:
-1.https://www.youtube.com/watch?v=Ph9CdxfFQyI&list=PLgH5QX0i9K3qLcx9DvVDWmNJ7riPvxzCD&index=46
-2.https://www.youtube.com/watch?v=JhjH59hYAt8&list=PLgH5QX0i9K3qLcx9DvVDWmNJ7riPvxzCD&index=47
+## DATE:
+- 1.https://www.youtube.com/watch?v=Ph9CdxfFQyI&list=PLgH5QX0i9K3qLcx9DvVDWmNJ7riPvxzCD&index=46
+- 2.https://www.youtube.com/watch?v=JhjH59hYAt8&list=PLgH5QX0i9K3qLcx9DvVDWmNJ7riPvxzCD&index=47
