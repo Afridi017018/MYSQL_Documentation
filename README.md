@@ -1,6 +1,6 @@
 # Relational Database
 
-- [My MySQL playlist](https://www.youtube.com/watch?v=aZnwpMON0NA&t=4s)
+- [MySQL Tutorial](https://www.youtube.com/watch?v=aZnwpMON0NA&t=4s)
 
 ## 1. introduction to Database
 
@@ -338,8 +338,9 @@ GROUP BY Department
 ORDER BY SUM(Age) DESC;
 ```
 
+
+## Truncate Table
 ```sql
-Truncate Table
 TRUNCATE TABLE info;          ///all record will be deleted without the fields(column name)
 ```
 
